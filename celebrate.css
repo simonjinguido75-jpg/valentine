@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Same background */
+.celebrate-bg {
+  background-image: url("VALENTINES.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Celebration card */
+.celebrate-card {
+  text-align: center;
+  padding: 70px 80px;
+  background: rgba(255, 30, 120, 0.7);
+  border-radius: 25px;
+  color: white;
+  animation: popIn 0.6s ease-out;
+}
+
+/* Big celebration text */
+.celebrate-card h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+/* Animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
